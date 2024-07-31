@@ -15,6 +15,10 @@ const observer = new MutationObserver((mutationsList, observer) => {
       targetLink = link;
       console.log('ターゲットリンクが見つかりました:', targetLink.href);  // ターゲットリンクが見つかったことを表示
     }
+    if (link.textContent.includes('クリックすると勤務表を表示します')) {
+      targetLink = link;
+      console.log('ターゲットリンクが見つかりました:', targetLink.href);  // ターゲットリンクが見つかったことを表示
+    }
   });
 
   if (targetLink) {
