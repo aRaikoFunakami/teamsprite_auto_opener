@@ -1,0 +1,1 @@
+# teamsprite_auto_opener
