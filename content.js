@@ -19,6 +19,10 @@ const observer = new MutationObserver((mutationsList, observer) => {
       targetLink = link;
       console.log('ターゲットリンクが見つかりました:', targetLink.href);  // ターゲットリンクが見つかったことを表示
     }
+    if (link.textContent.includes('クリックすると経費事前精算申請を表示します')) {
+      targetLink = link;
+      console.log('ターゲットリンクが見つかりました:', targetLink.href);  // ターゲットリンクが見つかったことを表示
+    }
   });
 
   if (targetLink) {
